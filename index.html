@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD</title>
+</head>
+
+<body id="body1">
+    <header>
+        <h1>Admin</h1>
+        
+        <button onclick="vitabl()" style="display: none;"  id="viewtab">view table</button>
+    </header>
+    <div  id="toinp" class="tout-input">
+        <input style="width: 93.5%;" id="title" type="text" placeholder="title">
+        <div style="width: 95%;" id="numbre">
+            <input onkeyup="gettotal()" id="price" type="number" placeholder="price">
+            <input onkeyup="gettotal()" id="taxes" type="number" placeholder="taxes">
+            <input onkeyup="gettotal()" id="ads" type="number" placeholder="ads">
+            <input onkeyup="gettotal()" id="discount" type="number" placeholder="discount">
+            <h3 style="text-align: center;">total : <span id="total"></span></h3>
+        </div>
+        <label id="label" for="fill">image</label>
+        <input style="display: none;" type="file" id="fill" placeholder="img">
+        <input style="width: 93.5%;" id="count" type="number" placeholder="count">
+        <input style="width: 93.5%;" id="category" type="text" placeholder="category">
+        <button class="button" id="creat">creat</button>
+        <div style="width: 100%; text-align: center;" id="deleteall">
+        </div>
+    </div>
+    <table id="table2">
+        <thead>
+            <tr>
+                <th style="width: 11%;" id="left">IMAGE</th>
+                <th style="width: 6%;">ID</th>
+                <th style="width: 11%;">TITLE</th>
+                <th style="width: 9%;;">PRICE</th>
+                <th style="width: 9%;">TAXES</th>
+                <th style="width: 9%;">ADS</th>
+                <th style="width: 9%;">DISCOUNT</th>
+                <th style="width: 10%;">TOTAL</th>
+                <th style="width: 11%;">CATEGORY</th>
+                <th style="width: 8%;">DELETE</th>
+                <th style="width: 8%;">UPADATE</th>
+            </tr>
+        </thead>
+        <tbody id="table">
+        </tbody>
+    </table>
+    <button onclick="alert(innerWidth)">click</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
