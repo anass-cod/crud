@@ -143,31 +143,3 @@ function delall() {
     lesproduits.splice(0)
     read()
 }
-var viewtab = document.getElementById("viewtab")
-var table2 = document.getElementById("table2")
-var overtable = false
-onresize = res
-function res() {
-    if (innerWidth < 1000) {
-        viewtab.style.display = "block"
-    }
-    else {
-        viewtab.style.display = "none"
-    }
-}
-res()
-var toinp = document.getElementById("toinp")
-function vitabl() {
-    if(!overtable){
-        table2.style.display = "block"
-        toinp.style.display = "none"
-        viewtab.innerHTML = "viewinput"
-        overtable = true
-    }
-    else{
-        table2.style.display = "none"
-        toinp.style.display = "block"
-        viewtab.innerHTML = "viewtable"
-        overtable = false
-    }
-}
